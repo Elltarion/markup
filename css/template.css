@@ -259,17 +259,25 @@ aside .module {
 }
 
 aside .module.filter li {
-	margin:0
+	margin:0 0 7px 0
 }
 
-aside .module a {
-	text-decoration:none;
-	color:#
+aside .module ul ul {
+	padding:0;
+	margin:5px 0 0 20px
+}
+
+aside .module ul ul li {
+	list-style:disc
 }
 
 aside .module.scroll {	
 	max-height:360px;
 	overflow-y:scroll
+}
+
+aside .brands {
+	text-transform:uppercase
 }
 
 aside .discount {
@@ -301,7 +309,7 @@ aside .module span {
 
 aside .module ul {
 	margin:0;
-	padding:0 10px 10px 10px;
+	padding:10px;
 }
 aside .module li {
 	list-style:none;
