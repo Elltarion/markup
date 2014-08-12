@@ -41,20 +41,42 @@
 		
 		$('.video').fancybox({
 			type: 'iframe'
-		})
+		});
 		
-		$('.scroll ul').perfectScrollbar({
+		/*$('.scroll ul').perfectScrollbar({  //не работает, надо поправить
 			suppressScrollX:true,
 			includePadding:true
-		})		
-		var $container = $('.module.inspire .wrap').masonry({
-				columnWidth: 100,
-				gutter: 20,
-				itemSelector: 'img'
-			})
+		});*/
+		
+		/* BASKET  */
+		$('.counter.left').on('click', function(){
+			var elValue=$(this).parent().children(".value");
+			var text=elValue.text();
+			elValue.text((parseInt(text)-1));	
+			
+			var price=$(this).parent().parent().children(".price").children(".value");
+			text=price.text();
+			price.text((parseInt(text)-price.data("price")));
+		});
+		
+		$('.counter.right').on('click', function(){
+			var elValue=$(this).parent().children(".value");
+			var text=elValue.text();
+			elValue.text((parseInt(text)+1));	
+
+			var price=$(this).parent().parent().children(".price").children(".value");
+			text=price.text();
+			price.text((parseInt(text)+price.data("price")));
+		});
+		
+		
+		
+		
+		/* BASKET-END */
+		
+		
 		
 		VK.Widgets.Group("vk_groups_1", {mode: 0, width: "370", height: "300", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 20003922)		
 		VK.Widgets.Group("vk_groups_2", {mode: 0, width: "370", height: "300", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 20003922)		
 	})
-	
 })(jQuery)
