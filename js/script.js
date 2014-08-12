@@ -68,12 +68,12 @@
 			text=price.text();
 			price.text((parseInt(text)+price.data("price")));
 		});
-		
-		
-		
-		
 		/* BASKET-END */
 		
+		$('.module.good  .params .size .item').on('click', function(){
+			$('.module.good  .params .size .item').removeClass("active");
+			$(this).addClass("active");
+		});
 		
 		
 		VK.Widgets.Group("vk_groups_1", {mode: 0, width: "370", height: "300", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 20003922)		

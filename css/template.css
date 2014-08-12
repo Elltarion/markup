@@ -899,14 +899,31 @@ footer .copyright {
 	height: 50px;
 }
 
+.module.good  .params .buttons div{
+	width: 120px;
+	max-width: 120px;
+	height: 35px;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	line-height: 33px;
+	margin-right: 12px;
+}
+
 .module.good  .params .name{
-	width: 400px;
+	width: 500px;
 	font-size: 18px;
 	font-family: tahoma;
 	vertical-align: bottom;
 	padding-bottom: 8px;
 }
 
+.module.good a{
+	text-decoration: underline; 
+	color: #fa4a6b;
+	font-family: tahoma;
+}
 
 .module.good  .params .price{
 	font-size: 24px;
@@ -921,9 +938,14 @@ footer .copyright {
 	font-size: 12px;
 	font-family: tahoma;
 	vertical-align: bottom;
-	padding-top: 18px;
-	
+	padding-top: 18px;	
 }
+
+.module.good  .params .infoCount{
+	padding-top: 17px;	
+	padding-bottom: 25px;
+}
+
 
 .module.good  .params .title{
 	text-align: right;
@@ -936,8 +958,76 @@ footer .copyright {
 .module.good  .params .size .item{
 	padding-bottom: 17px;
 	background: #f4f6f7;
+	padding: 0;
+	height: 35px;
+	margin: 0;
+	margin-right: 5px;
+	width: 55px;
+	line-height: 33px;
+	cursor: pointer;
+	border: 2px solid #fff;
 }
+
+.module.good  .params .size .item:hover{
+	border: 2px solid #fa4a6b;
+}
+
+.module.good  .params .size .item.active{
+	border: 2px solid #fa4a6b;
+	background: #fa4a6b;
+	color: #fff;
+}
+
+.module.good  .params .right{
+	padding-left: 20px;
+}
+
+
+.module.good  .module.wishList h4 {
+	font: normal 18px Tahoma;
+}
+
 /**/
+
+.module.goodInfo {
+		border-bottom: 0;
+		border-top:1px solid #d7d7d7;
+		margin-top: 35px;
+		padding: 0;
+}
+
+.module.goodInfo  .params {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+
+
+.module.goodInfo  .params .left {
+	width: 150px;
+	min-width: 150px;
+	max-width: 150px;
+	text-align: left;
+	padding: 0px;
+}
+
+.module.goodInfo  h4{
+	margin-bottom: 10px;
+}
+
+.module.goodInfo  .params .right {
+	width: 490px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.module.goodInfo  .params .item {
+	height: auto;
+	width: auto;
+	background: #fff;
+	padding: 0;
+	margin: 0;
+}
 
 .autoWidth {
 	width: auto;
@@ -1042,6 +1132,8 @@ footer .copyright {
 
 .button {
 	cursor: pointer;
+	background-color: #fa4a6b;
+	color: #fff;
 }
 
 .counter {
@@ -1050,6 +1142,7 @@ footer .copyright {
 	width: 11px;
 	text-align: center;
 	margin-right: 5px;
+	color: #000;
 }
 
 .dTCell {
