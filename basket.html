@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<title>Корзина</title>
+	<link rel="stylesheet" href="css/template.css" />
+	<link rel="stylesheet" href="css/jquery.bxslider.css" />
+	<link rel="stylesheet" href="css/jquery.fancybox.css" />
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="http://vk.com/js/api/openapi.js?115"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="misc">
+				<a href="" class="logo"></a>
+				<a href="" class="in">Войти</a>
+				<a href="" class="reg">Регистрация</a>
+				<a href="" class="cart">10</a>
+				<form action=""><input type="text" placeholder="Поиск..." /><input type="submit" value="" /></form>
+				<a href="" class="giftcart">Подарочная карта</a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="">Нижнее белье</a></li>
+					<li><a href="">Колготки и чулки</a></li>
+					<li><a href="">Бренды</a></li>
+					<li><a href="">Популярное</a></li>
+					<li><a href="">Новинки</a></li>
+					<li><a href="">Промо-акции</a></li>
+					<li><a href="">Аксессуары</a></li>
+					<li><a href="">Как выбрать</a></li>
+					<li><a href="">Вдохновение</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="showcase"></div>
+		<section>
+			<h1 class="pageTitle alignLeft">КОРЗИНА</h1>
+			<div class="content fullWidth">
+				<table>
+					<tr class="title">
+						<td colspan="2">Товар</td>
+						<td>Наличие</td>
+						<td>Количество</td>
+						<td>Цена</td>
+					</tr>
+					<tr class="item">
+						<td class="good" colspan="2">
+							<img src="images/new.jpg" class="goodImg">
+							<div class="goodDescr">Описание</div>
+							<div class="goodButtons"><a class="goodDel" href="#delete">Удалить</a><a class="goodUpd" href="#update">Изменить</a></div>
+						</td>
+						<td class="availability">Есть в наличии</td>
+						<td class="count"><div class="counter left button inline">-</div><span class="value inline">1</span><div class="counter right button inline">+</div></td>
+						<td class="price"><div class="value toLeft" data-price="12500">12500</div> р.</td>
+					</tr>
+					<tr class="item">
+						<td class="good" colspan="2">
+							<img src="images/new.jpg" class="goodImg">
+							<div class="goodDescr">Описание</div>
+							<div class="goodButtons"><a class="goodDel" href="#delete">Удалить</a><a class="goodUpd" href="#update">Изменить</a></div>
+						</td>
+						<td class="availability">Есть в наличии</td>
+						<td class="count"><div class="counter left button inline">-</div><span class="value inline">5</span><div class="counter right button inline">+</div></td>
+						<td class="price"><div class="value toLeft" data-price="12500">62500</div> р.</td>
+					</tr>
+				</table>
+				<div class="total"><div class="inline"><b>Стоимость товаров:</b> <span id="totalPrice">1740 руб.</span></div><div class="byCard inline button">Купить подарочную карту</div>  </div>
+				<div class="discounts">
+					<div class="inline">В вашем распоряжении: <b>750 бонусных рублей</b></div><div class="byCard noFloat inline button">Использовать при оплате данного заказа</div><div class="byCard inRight inline button">К оплате</div>
+				</div>
+				<div class="links"><a href="#">Узнать подробнее о дополнительных <br> скидках и бонусах</a></div>
+				<div class="module wishList">
+				<h4>Вас так же может заинтересовать:</h4>
+				<div class="wrap">
+						<div class="item first">
+							<a href="#">
+								<div class="imgwrap">
+									<img src="images/new.jpg">
+								</div>
+								<span class="caption">
+								 Eberjey Veronique Bralet
+								</span>
+							</a>
+							<span class="buy">
+								<span class="price">1740 р.</span>
+								<a class="wishList" href="#">Добавить в Wishlist</a>
+							</span>
+							<span class="link">Купить быстро</span>
+							<span class="link">Купить дешевле</span>
+						</div>
+						<div class="item">
+							<a href="#">
+								<div class="imgwrap">
+									<img src="images/new.jpg">
+								</div>
+								<span class="caption">
+								 Eberjey Veronique Bralet
+								</span>
+							</a>
+							<span class="buy">
+								<span class="price">1740 р.</span>
+								<a class="wishList" href="#">Добавить в Wishlist</a>
+							</span>
+							<span class="link">Купить быстро</span>
+							<span class="link">Купить дешевле</span>
+						</div>
+						<div class="item">
+							<a href="#">
+								<div class="imgwrap">
+									<img src="images/new.jpg">
+								</div>
+								<span class="caption">
+								 Eberjey Veronique Bralet
+								</span>
+							</a>
+							<span class="buy">
+								<span class="price">1740 р.</span>
+								<a class="wishList" href="#">Добавить в Wishlist</a>
+							</span>
+							<span class="link">Купить быстро</span>
+							<span class="link">Купить дешевле</span>
+						</div>
+						<div class="item">
+							<a href="#">
+								<div class="imgwrap">
+									<img src="images/new.jpg">
+								</div>
+								<span class="caption">
+								 Eberjey Veronique Bralet
+								</span>
+							</a>
+							<span class="buy">
+								<span class="price">1740 р.</span>
+								<a class="wishList" href="#">Добавить в Wishlist</a>
+							</span>
+							<span class="link">Купить быстро</span>
+							<span class="link">Купить дешевле</span>
+						</div>
+						<div class="item last">
+							<a href="#">
+								<div class="imgwrap">
+									<img src="images/new.jpg">
+								</div>
+								<span class="caption">
+								 Eberjey Veronique Bralet
+								</span>
+							</a>
+							<span class="buy">
+								<span class="price">1740 р.</span>
+								<a class="wishList" href="#">Добавить в Wishlist</a>
+							</span>
+							<span class="link">Купить быстро</span>
+							<span class="link">Купить дешевле</span>
+						</div>
+					</div>
+					<div class="clr"></div>
+				</div>
+				
+			</div>
+		</section>
+	</div>
+	<footer>
+		<div class="wrapper">
+			<div class="row">
+				<h3>Lorem Ipsum</h3>
+				<ul>
+					<li><a href="#">Lorem Ipsum</a></li>
+					<li><a href="#">Lorem Ipsum</a></li>
+					<li><a href="#">Lorem Ipsum</a></li>
+					<li><a href="#">Lorem Ipsum</a></li>
+					<li><a href="#">Lorem Ipsum</a></li>
+					<li><a href="#">Lorem Ipsum</a></li>
+
+				</ul>
+			</div>
+			<div class="row">
+				<h3>Lorem Ipsum</h3>
+				<ul>
+					<li><a href="#">Lorem Ipsum</a></li>
+					<li><a href="#">Lorem Ipsum</a></li>
+					<li><a href="#">Lorem Ipsum</a></li>
+				</ul>
+			</div>
+			<div class="row">
+				<h3>Lorem Ipsum</h3>
+				<ul>
+					<li><a href="#">Lorem Ipsum</a></li>
+					<li><a href="#">Lorem Ipsum</a></li>
+					<li><a href="#">Lorem Ipsum</a></li>
+				</ul>
+			</div>
+			<div class="row">
+				<h3>Lorem Ipsum</h3>
+				<ul>
+					<li><a href="#">Lorem Ipsum</a></li>
+					<li><a href="#">Lorem Ipsum</a></li>
+				</ul>
+			</div>
+			<div class="row-large">
+				<h3>Мы в социальных сетях:</h3>
+				<ul>
+					<li>						
+						<noindex>
+						<a rel="nofollow" target="_blank" href="http://facebook"></a>
+						<a rel="nofollow" target="_blank" href="http://twitter"></a>
+						<a rel="nofollow" target="_blank" href="http://vk.com"></a>
+						</noindex>
+					</li>
+					<li class="subscribe">
+						<h4>Подписаться на новости</h4>
+						<form action="">
+							<input type="text" placeholder="E-mail" />
+							<input type="submit" value="Отправить" />
+						</form>
+					</li>
+					<li class="copyright">
+						&copy; 2014
+					</li>
+				</ul>			
+			</div>
+		</div>
+		<div class="clr"></div>
+	</footer>
+</body>
+</html>

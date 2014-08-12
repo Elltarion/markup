@@ -1,5 +1,3 @@
-/*test shit*/
-
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic);
 
 body, html {
@@ -185,6 +183,7 @@ nav li:hover {
 
 .module h3 {
 	text-align:center;
+	margin:25px 0;
 	font:800 24px Tahoma;
 	text-transform:uppercase
 }
@@ -201,14 +200,12 @@ nav li:hover {
 	text-align:center;
 	background:#f4f6f7;
 	width:170px;
+	height:340px;
+	overflow:hidden;
 	float:left;
 	margin: 0 10px 20px 10px;
 	padding:0 0 8px 0
 }
-
-.module .item:first-child {
-	/* margin:0
- */}
 
 .item span {
 	display:block
@@ -219,19 +216,22 @@ nav li:hover {
 }
 
 .item span.caption {
-	padding:20px
+	padding: 0 20px;
+	display: table-cell;
+	height: 80px;
+	vertical-align: middle;
 }
 
 .item span.link,
 .item span.buy
 {
-	padding:0 20px;
+	padding: 0 15px;
 	text-decoration:underline;
 	cursor:pointer
 }
 
 .item span.buy {
-	padding:5px 20px;
+	padding: 5px 0px;
 	margin:0 0 5px 0;
 	background:#fa4a6b;
 	color:#fff
@@ -253,6 +253,29 @@ aside .module.discount {
 	border:none
 }
 
+aside .module.colors a {
+	display:block;
+	width:20px;
+	height:20px;
+	float:left;
+	margin:2px
+}
+
+aside .module.colors ul {
+	padding:9px
+}
+
+aside .module.colors li {
+	margin:0;
+	padding:2px;
+	float:left;
+	border:1px solid transparent
+}
+
+aside .module.colors li:hover {
+	border:1px solid #d7d7d7
+}
+
 aside .module {
 	display:block;
 	border:none;
@@ -264,6 +287,13 @@ aside .module.filter li {
 	margin:0 0 7px 0
 }
 
+a.clearFilter {
+	width:80%!important;
+	text-decoration:underline;
+	margin:0;
+	padding:0 9px 9px 9px
+}
+
 aside .module ul ul {
 	padding:0;
 	margin:5px 0 0 20px
@@ -273,9 +303,10 @@ aside .module ul ul li {
 	list-style:disc
 }
 
-aside .module.scroll {	
-	max-height:360px;
-	overflow-y:scroll
+aside .module.scroll ul {
+	position:relative;
+	max-height:320px;
+	overflow-y:hidden
 }
 
 aside .brands {
@@ -315,7 +346,7 @@ aside .module ul {
 }
 aside .module li {
 	list-style:none;
-	margin:0 0 25px 0
+	margin:0 0 10px 0
 }
 
 .module.survey li:last-child {
@@ -403,7 +434,35 @@ input[type="checkbox"]:checked + label:before
 	float:left
 }
 
-.module.social .row:first-child {
+.module.catalog {
+	border:none;
+	padding:0;
+	margin:0
+}
+
+.module.inspire img {
+	width:225px;
+	height:317px;
+	float:left;
+	display:block;
+	margin: 0 0 15px 0;
+	max-width:none;
+	max-height:none;
+	border:none
+}
+
+.module.inspire img.big {
+	width:465px;
+	height:650px;
+}
+
+.inspire aside {
+	display:none
+}
+
+.inspire .content {
+	margin:0;
+	width:100%
 }
 
 footer {
@@ -422,7 +481,11 @@ footer li {
 }
 
 footer ul {
-	padding:0
+	padding:0;
+	margin:0;
+	width:100%;
+	display:block;
+	float:none
 }
 
 footer h3 {
@@ -505,11 +568,15 @@ footer .copyright {
 }
 
 .pager ul, .pager li {
-	display:inline-block;
+	display:inline-block;	
 }
 
 .pager li {
 	list-style:none;
+	width:32px;
+	height:32px;
+	*display: inline;
+	margin:0 1px
 }
 
 .pager li a {
@@ -529,10 +596,4 @@ footer .copyright {
 	background:#FA4A6B;
 	color:#fff;
 	border:2px solid #FA4A6B
-}
-
-.module.catalog {
-	border:none;
-	padding:0;
-	margin:0
 }
