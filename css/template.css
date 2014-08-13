@@ -616,7 +616,7 @@ footer .copyright {
 .good {
 	padding: 10px;
 	vertical-align: top;
-	text-shadow: 1px 1px 1px rgba(0,0,0, 0.2);
+	
 	width: 400px;
 	border: 1px solid rgb(225, 225, 225);
 }
@@ -657,7 +657,7 @@ footer .copyright {
 	width: 170px;
 	vertical-align: top;
 	padding: 10px;
-	text-shadow: 1px 1px 1px rgba(0,0,0, 0.2);
+	
 	border: 1px solid rgb(225, 225, 225);
 }
 
@@ -671,7 +671,7 @@ footer .copyright {
 	vertical-align: middle;
 	height: 37px;
 	line-height: 33px;
-	text-shadow: 1px 1px 1px rgba(0,0,0, 0.2);
+	
 	font-family: tahoma;
 	font-size: 14px;
 	border-bottom: 1px solid rgb(225, 225, 225);
@@ -915,7 +915,7 @@ footer .copyright {
 	width: 500px;
 	font-size: 18px;
 	font-family: tahoma;
-	vertical-align: bottom;
+	vertical-align: middle;
 	padding-bottom: 8px;
 }
 
@@ -931,7 +931,7 @@ footer .copyright {
 	vertical-align: bottom;
 	border: 0;
 	padding: 0;
-	padding-top: 17px;
+	padding-top: 0;
 }
 
 .module.good  .params .priceInfo{
@@ -1093,6 +1093,12 @@ footer .copyright {
 	cursor: auto;
 }
 
+.module.wishList a{
+	color: #000;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
 .buy .price {
 	margin: 0;
 	padding: 0;
@@ -1101,7 +1107,7 @@ footer .copyright {
 	text-decoration: none;
 }
 
-.buy a {
+.module.wishList .buy a {
 	color: #fff;
 	text-decoration: underline;
 	cursor: pointer;
