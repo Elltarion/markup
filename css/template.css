@@ -589,12 +589,9 @@ footer .copyright {
 }
 
 .pageTitle {
-	font-size: 24px;
-	font-weight: bold;
-	font-family: Tahoma;
+	font: bold 24px Tahoma;
 	margin-bottom: 30px;
 }
-
 
 .content table .title{
 	font-size: 14px;
@@ -604,7 +601,7 @@ footer .copyright {
 .content table .title td {
 	background-color: #f4f6f7;
 	height: 35px;
-	padding-left: 10px;
+	padding: 0 0 0 10px;
 }
 
 .fullWidth {
@@ -616,13 +613,11 @@ footer .copyright {
 .good {
 	padding: 10px;
 	vertical-align: top;
-	
 	width: 400px;
 	border: 1px solid rgb(225, 225, 225);
 }
 
 .goodImg{
-	width: 140px;
 	width: 140px;
 	float: left;
 	display: block;
@@ -630,17 +625,17 @@ footer .copyright {
 
 .goodDescr {
 	display: block;
-	padding-left: 20px;	
+	padding: 0 0 0 20px;
 	float: left;
 	width: 210px;
 }
 
 .goodButtons {
 	display: block;
-	padding-left: 20px;	
+	padding: 0 0 0 20px;
+	margin: 20px 0 0 0;	
 	float: left;
 	width: 210px;
-	margin-top: 20px;
 }
 
 .goodButtons a{
@@ -649,61 +644,63 @@ footer .copyright {
 }
 
 .goodUpd {
-	margin-left: 10px;
+	margin: 0 0 0 10px;
 }
-
 
 .availability, .count, .price {
 	width: 170px;
 	vertical-align: top;
 	padding: 10px;
-	
 	border: 1px solid rgb(225, 225, 225);
+}
+
+.availability .count .value {
+	float: left;
+}
+
+.content table .count div, .content table .count span  {
+	display: inline-block;
+}
+
+.discounts .byCard{
+	display: inline-block;
+	margin: -10px 2px 0 15px;
 }
 
 .total {
 	width: 100%;
-	padding-top: 4px;
-	padding-bottom: 4px;
-	margin-right: 2px;
+	padding: 4px 0;
+	margin: 0 2px 0 0;
 	text-align: right;
 	display: block;
 	vertical-align: middle;
-	height: 37px;
+	height: 37px;	
+	font: normal 14px tahoma;
 	line-height: 33px;
-	
-	font-family: tahoma;
-	font-size: 14px;
 	border-bottom: 1px solid rgb(225, 225, 225);
 }
 
 #totalPrice {
-	margin-left: 25px;
+	margin: 0 0 0 25px;
 }
 
 .byCard {
 	float: right;
 	background-color: #fa4a6b;
-	/*height: 33px;*/
 	padding: 10px 20px;
 	color: #fff;
 	line-height: 1;
-	margin-right: 2px;
-	margin-left: 15px;
+	margin: 0 2px 0 15px;
 }
 
 .discounts {
-	font-family: tahoma;
-	font-size: 14px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	font: normal 14px tahoma;
+	padding: 20px 0 20px 0;
 }
 
 .content .links {
-	font-family: tahoma;
-	font-size: 14px;
-	padding-top: 20px;
-	padding-bottom: 30px;
+	font: normal 14px tahoma;
+	padding: 20px 0 30px 0;
 	border-bottom: 1px solid rgb(225, 225, 225);
 	width: 100%;
 	text-decoration:underline;
@@ -711,10 +708,6 @@ footer .copyright {
 
 .count .value {
 	margin-right: 5px;
-}
-
-.toLeft {
-	float: left;
 }
 
 .price .value {
@@ -726,32 +719,19 @@ footer .copyright {
 }
 
 .module.brands {
-	padding-top: 0;
-	padding-bottom: 30px;
+	padding: 0 0 30px 0;
 	border-bottom: 0;
-	margin-bottom: 70px;
+	margin: 0 0 70px 0;
 }
 
-.module.articleList {
-	border: 0;
-	margin: 0;
-}
-
-.module.bonusLending {
-	border: 0;
-	margin: 0;
-}
-
-.module.articlePage{
+.module.bonusLending, .module.articlePage, .module.articleList  {
 	border: 0;
 	margin: 0;
 }
 
 .module.articlePage .itemImage{
 	float: left;
-	padding-right: 35px;
-	padding-bottom: 20px;
-	padding-top: 3px;
+	padding: 3px 35px 20px 0;
 }
 
 .module.articlePage .itemImage img{
@@ -760,84 +740,65 @@ footer .copyright {
 }
 
 .module.articlePage .itemContent{
-	margin-bottom: 20px;
+	margin: 0 0 20px 0;
 }
 
-
-.module.buyLending {	
-	padding: 0;
-	margin: 0;
-	border: 0;
-	padding-bottom: 30px;
-	padding-top: 25px;
+.module.buyLending  #quick{	
+	float: left;
 }
 
-.module.buyLending .toRight {	
-	float: right;
-}
-
-.toRight {
+.module.buyLending #chip{	
 	float: right;
 }
 
 #quick {
-	padding-right: 40px;
+	padding: 0 40px 0 0;
 }
 
 #chip {
-	padding-left: 40px;
+	padding: 0 0 0 40px;
 }
 
 .module.buyLending .item{
 	width: 450px;
+	height: auto;
 	padding: 0;
 	margin: 0;
-	background-color: #fff;
+	background: #fff;
 	text-align: center;
-	height: auto;
 }
 
 .module.buyLending .item img{
 	height: 470px;
 }
 
-
-
 .module.buyLending .title{
-	font-weight: bold;
-	font-size: 24px;
-	font-family: tahoma;
-	margin-top: 20px;
+	font: bold 24px tahoma;
+	margin: 20px 0 0 0;
 }
 
 .module.buyLending .description{
-	margin-top: 25px;
+	margin: 25px 0 0 0;
 	text-align: left;
-	font-size: 18px;
-	font-family: tahoma;
+	font: normal 17px tahoma;
 }
 
 .module.bonusLending .description{
-	font-size: 18px;
-	font-family: tahoma;
+	font: normal 18px tahoma;
 }
 
 .module.bonusLending .title{
 	font-weight: bold;
-	font-size: 24px;
-	font-family: tahoma;
-	margin-top: 30px;
-	margin-bottom: 17px;
+	font: normal 24px tahoma;
+	margin: 30px 0 17px 0;
 }
 
 .module.bonusLending .items .item{
 	float: left;
-	margin-right: 12px;
-	margin-left: 12px;
+	margin: 0 12px;
 	height: auto;
 	width: 310px;
 	background-color: #fff;
-	margin-bottom: 0;
 }
 
 .module.bonusLending .item .title{
@@ -854,16 +815,16 @@ footer .copyright {
 }
 
 .module.bonusLending .item.last{
-	margin-right: 0px;
+	margin: 0 20px 0 0;
 }
 
 .module.buyLending .itemContent{
-	margin-bottom: 20px;
+	margin: 0 0 20px 0;
 }
 
 .module.goodView {
 	width: 300px;
-	margin-top: 30px;
+	margin: 30px 0 0 0;
 	border: 0;
 }
 
@@ -876,15 +837,14 @@ footer .copyright {
 .module.goodView  .goodImg {
 	width: 300px;
 	height: 300px;
-	margin-bottom: 20px;
+	margin: 0 0 20px 0;
 }
 
 .module.good {
 	width: 650px;
 	border:none;
 	padding:0;
-	margin:0;
-	margin-top: 30px;
+	margin: 30px 0 0 0;
 }
 
 .module.good  .params .brandLogo img{
@@ -905,45 +865,38 @@ footer .copyright {
 	height: 35px;
 	display: inline-block;
 	padding: 0;
-	margin: 0;
+	margin: 0 12px 0 0;
 	text-align: center;
 	line-height: 33px;
-	margin-right: 12px;
 }
 
 .module.good  .params .name{
 	width: 500px;
-	font-size: 18px;
-	font-family: tahoma;
+	font: normal 18px tahoma;
 	vertical-align: middle;
-	padding-bottom: 8px;
+	padding: 0 0 8px 0;
 }
 
 .module.good a{
 	text-decoration: underline; 
 	color: #fa4a6b;
-	font-family: tahoma;
 }
 
 .module.good  .params .price{
-	font-size: 24px;
-	font-family: tahoma;
+	font: normal 24px tahoma;
 	vertical-align: bottom;
 	border: 0;
 	padding: 0;
-	padding-top: 0;
 }
 
 .module.good  .params .priceInfo{
-	font-size: 12px;
-	font-family: tahoma;
+	font: normal 12px tahoma;
 	vertical-align: bottom;
-	padding-top: 18px;	
+	padding: 18px 0 0 0;
 }
 
 .module.good  .params .infoCount{
-	padding-top: 17px;	
-	padding-bottom: 25px;
+	padding: 17px 0 25px 0;
 }
 
 
@@ -952,16 +905,14 @@ footer .copyright {
 }
 
 .module.good  .params .articul{
-	padding-bottom: 17px;
+	padding: 0 0 17px 0;
 }
 
 .module.good  .params .size .item{
-	padding-bottom: 17px;
 	background: #f4f6f7;
 	padding: 0;
 	height: 35px;
-	margin: 0;
-	margin-right: 5px;
+	margin: 0 0 0 5px;
 	width: 55px;
 	line-height: 33px;
 	cursor: pointer;
@@ -987,18 +938,15 @@ footer .copyright {
 	font: normal 18px Tahoma;
 }
 
-/**/
-
 .module.goodInfo {
 		border-bottom: 0;
 		border-top:1px solid #d7d7d7;
-		margin-top: 35px;
+		margin: 35px 0 0 0;
 		padding: 0;
 }
 
 .module.goodInfo  .params {
-	margin-top: 25px;
-	margin-bottom: 25px;
+	margin: 25px 0 25px 0;
 }
 
 
@@ -1012,7 +960,7 @@ footer .copyright {
 }
 
 .module.goodInfo  h4{
-	margin-bottom: 10px;
+	margin: 0 0 10px 0;
 }
 
 .module.goodInfo  .params .right {
@@ -1036,11 +984,9 @@ footer .copyright {
 .back a{
 	text-decoration: underline;
 	color: #fa4a6b;
-	background-image: url("../images/backLayer.png");
-	background-repeat: no-repeat;
-	padding-left: 15px;
-	background-position-y: 5px;
-	font-family: tahoma;
+	background: url("../images/backLayer.png") no-repeat 0 5px;
+	padding: 0 0 0 15px;
+	font: 400 14px tahoma;
 }
 
 .module.articleList .item{
@@ -1051,20 +997,15 @@ footer .copyright {
 	text-align: left;
 	color: #fa4a6b;
 	padding: 0;
-	margin-bottom: 15px;
-	margin-left: 0;
-	font-size: 14px;
-	font-family: tahoma;
+	margin: 0 0 15px 0;
+	font: 400 14px tahoma;
 }
 
 .module.articleList .item a{
 	text-decoration: underline;
 	color: #fa4a6b;
-	background-image: url("../images/layer.png");
-	background-repeat: no-repeat;
-	padding-left: 18px;
-	background-position-y: 2px;
-	font-family: tahoma;
+	background: url("../images/layer.png") no-repeat 0 2px;
+	padding: 0 0 0 18px;
 }
 
 .module.brands .item img{
@@ -1076,8 +1017,7 @@ footer .copyright {
 	width: 170px;
 	height: 170px;
 	padding: 0;
-	margin-left: 12px;
-	margin-right: 12px;
+	margin: 0 12px;
 	border: 1px solid #d7d7d7;
 }
 
@@ -1085,7 +1025,6 @@ footer .copyright {
 	width: 170px;
 	height: 170px;
 	padding: 0;
-	/*margin-left: 0;*/
 }
 
 .module.wishList .buy{
@@ -1099,6 +1038,10 @@ footer .copyright {
 	cursor: pointer;
 }
 
+.module.wishList  a.wishList {
+	color: #fff;
+}
+
 .buy .price {
 	margin: 0;
 	padding: 0;
@@ -1107,7 +1050,7 @@ footer .copyright {
 	text-decoration: none;
 }
 
-.module.wishList .buy a {
+.module.wishList buy a {
 	color: #fff;
 	text-decoration: underline;
 	cursor: pointer;
@@ -1120,8 +1063,7 @@ footer .copyright {
 }
 
 .module.wishList .item {
-	margin-left: 16px;
-	margin-right: 16px;
+	margin: 0 16px;
 }
 
 .module.wishList .item.first {
@@ -1147,27 +1089,11 @@ footer .copyright {
 	background-color: #f4f6f7;
 	width: 11px;
 	text-align: center;
-	margin-right: 5px;
+	margin: 0 5px 0 0;
 	color: #000;
 }
 
 .dTCell {
 	display: table-cell;
 	vertical-align: middle;
-}
-
-.inLeft {
-	float: left;
-}
-
-.inRight {
-	float: right;
-}
-
-.noFloat {
-	float: none;
-}
-
-.item .inline {
-	display: inline-block;
 }
