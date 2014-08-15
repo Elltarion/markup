@@ -1244,6 +1244,11 @@ padding: 0;
 	height: auto;
 }
 
+.module.contestBanner .subscribe img{
+	float: left;
+	margin: 0 20px 0 0;
+}
+
 .module.contestBanner .subscribe .title{
 	font: bold 24px tahoma;
 }
@@ -1252,4 +1257,100 @@ padding: 0;
 	font: normal 17px tahoma;
 	margin: 25px 0;
 }
-	
+
+.module.participant{
+	padding: 0;
+	border: 0;
+}
+
+.module.participant h2{
+	font: normal 18px tahoma;
+	float: left;
+	width: 200px;
+	margin: 0;
+}
+
+.module.participant .title{
+	background: #f4f6f7;
+	height: 20px;
+	padding: 6px  5px 7px 15px;
+}
+
+.module.participant .title .buttons{
+	width: 50px;
+	float: right;
+	height: 22px;
+}
+
+.module.participant .title .buttons span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+	border: 1px solid rgb(137,137,137);
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	cursor: pointer;
+}
+
+.module.participant .title .buttons span:hover{
+	border-color: #fa4a6b;
+}
+
+.module.participant .title .buttons .left{
+	background: url(../images/partLeft.png);
+}
+
+.module.participant .title .buttons .right{
+	background: url(../images/partRight.png);
+}
+
+.module.participant .content {
+	float: none;
+	margin: 20px 0 30px 0;
+	padding: 0;
+	width: 100%;
+}
+
+.module.participant .mainImage {
+	width: 400px;
+	height: 550px;
+	min-height: 550px;
+	float: left;
+}
+
+.module.participant .content .wrap {
+	height: 550px;
+	width: 570px;
+	float: left;
+	display: block;
+	margin: 0 0 0 10px;
+	padding: 0;
+	overflow: hidden;
+}
+
+.module.participant .content .wrap li{
+	float: left;
+	list-style: none;
+	margin: 0 0 17px 20px;
+}
+
+.module.participant .content .img {
+	width: 170px;
+	height: 170px;
+}
+
+.module.participant .module.contestBanner{
+	padding: 0 0 30px 0;
+	border-bottom:1px solid #d7d7d7
+}
+
+.module.participant .module.wishList{
+	padding: 0 0 10px 0;
+}
+
+.module.participant .module.wishList h4{
+	margin: 0 0 15px 0;
+}
+
