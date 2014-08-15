@@ -23,6 +23,17 @@ a {
 	text-decoration:none
 }
 
+h1 {
+	font:800 24px Tahoma;
+	text-transform:uppercase;
+	margin: 25px 0 20px 0
+}
+
+h4 {
+	font:400 18px Tahoma;
+	margin:0 0 30px 0
+}
+
 .wrapper {
 	width:980px;
 	margin:0 auto
@@ -509,11 +520,11 @@ footer a[href*="vk.com"] {
 	background-position:top left
 }
 
-footer .subscribe {
+.subscribe {
 	height:60px
 }
 
-footer .subscribe input {
+.subscribe input{
 	display:block;
 	width: 90px;
 	float:left;
@@ -523,7 +534,7 @@ footer .subscribe input {
 	border:1px solid #bfcecf
 }
 
-footer .subscribe input[type="submit"] {
+.subscribe   input[type="submit"]{
 	width: 75px;
 	background:#fa4a6b;
 	color:#fff;
@@ -723,9 +734,15 @@ footer .copyright {
 	margin: 0 0 70px 0;
 }
 
+.module.brands h1, .module.articlePage h1{
+	text-align: center;
+	margin: 25px 0 30px 0;
+}
+
 .module.bonusLending, .module.articlePage, .module.articleList  {
 	border: 0;
 	margin: 0;
+	text-align: left;
 }
 
 .module.articlePage .itemImage{
@@ -1101,3 +1118,136 @@ footer .copyright {
 	display: table-cell;
 	vertical-align: middle;
 }
+
+
+.module.contest {
+padding: 0;
+}
+
+.module.contest .item img {
+	width: 170px;
+	height: 170px;
+	max-height: 170px;
+}
+
+.module.contest .item .title{
+	height: 35px;
+	margin: -38px 0 0 0;
+	padding: 0 10px;
+	font: normal 14px tahoma;
+	line-height: 2.3;
+	text-align: left;
+	background: rgba(0, 0 , 0 , 0.4);
+	color: #fff;
+	z-index: 100;
+	width: 150px;
+	position: absolute;
+	
+}
+
+.module.contest .item {
+	background: #fff;
+	width: 170px;
+	height: 170px;
+	max-height: 170px;
+	padding: 0;
+	display: block;
+	margin: 0 16px 30px 16px;
+}
+
+.module.contest .item.first{
+	margin: 0 16px 30px 0;
+}
+
+.module.contest .item.last{
+	margin: 0 0 30px 16px;
+}
+
+.module.contest h4{
+	margin: 0 0 20px 0;
+}
+
+.module.contest .date{
+	float: right;
+	font: normal 18px tahoma;
+	margin: -42px 0 0 0;
+}
+
+.module.contest .date a{
+	font: normal 14px tahoma;
+	text-decoration: underline;
+}
+
+.module.contest aside{
+	width: 170px; 
+	margin: 0 32px 0 0;
+}
+.module.contestInfo {
+	height: 371px;
+	border: 1px solid #d7d7d7;
+	text-align: center;
+}
+
+.module.contestInfo .title{
+	height: 30px!important;	
+	display: block;
+	text-align: left;
+	background: rgba(0, 0 , 0 , 0.05);
+	margin: 0;
+	padding: 0 10px;
+	width: 150px;
+	font: normal 14px tahoma;
+	line-height: 2;
+}
+
+.module.contestInfo .content{
+	padding: 0;
+	margin: 0px;
+	width: 150px;
+	text-align: left;
+	padding: 10px;
+	float: none;
+	height: 285px;
+}
+
+.module.contestInfo .link{
+	padding: 0;
+	margin: 0;
+	border-top: 1px solid #d7d7d7;
+	text-align: left;
+	width: 150px;
+	margin: 0 auto;
+	height: 35px!important;
+	line-height: 2.3;
+}
+
+.module.contestInfo .link a{
+	text-decoration: underline;
+}
+
+.module.contestBanner{
+	border: 0;
+	padding: 0;
+}
+
+.module.contestBanner .banner{
+float: left;
+width: 400px;
+}
+
+.module.contestBanner .subscribe{
+float: left;
+width: 550px;
+padding: 0 0 0 30px;
+height: auto;
+}
+
+.module.contestBanner .subscribe .title{
+font: bold 24px tahoma;
+}
+
+.module.contestBanner .subscribe .description{
+font: normal 17px tahoma;
+margin: 25px 0;
+}
+	
