@@ -1129,7 +1129,8 @@ padding: 0;
 	max-height: 170px;
 }
 
-.module.contest .item .title{
+.module.contest .item  span{
+	display: block;
 	height: 35px;
 	margin: -35px 0 0 0;
 	padding: 0 10px;
