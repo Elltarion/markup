@@ -26,7 +26,7 @@ a {
 h1 {
 	font:800 24px Tahoma;
 	text-transform:uppercase;
-	margin: 25px 0 20px 0
+	margin:0 0 20px 0
 }
 
 h4 {
@@ -618,6 +618,7 @@ footer .copyright {
 	width: 100%;
 	float: none;
 	margin: 0;
+	margin:20px 0 0 0;
 }
 
 .good {
@@ -736,7 +737,6 @@ footer .copyright {
 
 .module.brands h1, .module.articlePage h1{
 	text-align: center;
-	margin: 25px 0 30px 0;
 }
 
 .module.bonusLending, .module.articlePage, .module.articleList  {
@@ -803,9 +803,8 @@ footer .copyright {
 	font: normal 17px tahoma;
 }
 
-.module.bonusLending h1, .module.bonusLending h2{
+.module.bonusLending h2{
 	font: bold 24px tahoma;
-	margin: 30px 0 17px 0;
 }
 
 .module.bonusLending h2{
@@ -1137,7 +1136,7 @@ padding: 0;
 	font: normal 14px tahoma;
 	line-height: 2.3;
 	text-align: left;
-	background: rgba(0, 0 , 0 , 0.4);
+	background: url("../images/contestElFon.png");
 	color: #fff;
 	z-index: 100;
 	width: 150px;
