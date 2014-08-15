@@ -1126,7 +1126,6 @@ padding: 0;
 .module.contest .item img {
 	width: 170px;
 	height: 170px;
-	max-height: 170px;
 }
 
 .module.contest .item  span{
@@ -1149,11 +1148,13 @@ padding: 0;
 	background: #fff;
 	width: 170px;
 	height: 170px;
-	max-height: 170px;
-	min-height: 170px;
 	padding: 0;
 	display: block;
 	margin: 0 16px 30px 16px;
+}
+
+.module.contest .wrap {
+	margin: 0 0 0 200px;
 }
 
 .module.contest .item.first{
@@ -1232,23 +1233,23 @@ padding: 0;
 }
 
 .module.contestBanner .banner{
-float: left;
-width: 400px;
+	float: left;
+	width: 400px;
 }
 
 .module.contestBanner .subscribe{
-float: left;
-width: 550px;
-padding: 0 0 0 30px;
-height: auto;
+	float: left;
+	width: 550px;
+	padding: 0 0 0 30px;
+	height: auto;
 }
 
 .module.contestBanner .subscribe .title{
-font: bold 24px tahoma;
+	font: bold 24px tahoma;
 }
 
 .module.contestBanner .subscribe .description{
-font: normal 17px tahoma;
-margin: 25px 0;
+	font: normal 17px tahoma;
+	margin: 25px 0;
 }
 	
